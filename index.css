@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Sans', sans-serif;
+}
+button {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    font-weight: bold;
+}
+
+header {
+    padding: 0px 50px;
+}
+header, .logo-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0072bb;
+}
+.logo-img {
+    height: 100px;
+}
+.logo-name {
+    color: #fff;
+}
+.order-btn {
+    padding: 20px 60px 20px 35px;
+    background-color: #f36523;
+    color: #fff;
+    font-size: 18px;
+}
+
+.advertising-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 35px 50px;
+}
+.advertising-info :nth-child(n) {
+    text-align: center;
+}
+.adv-first {
+    margin-bottom: 10px;
+}
+.adv-text {
+    width: 450px;
+    margin-top: 30px;
+}
+
+.actual-position {
+    margin: 0px 20px;
+}
+.all-pos-wrapper {
+    margin: 35px 0px;
+}
+.pos-item_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.pos-item {
+    border: 2px solid #acacac;
+    border-radius: 5px;
+    width: calc(50% - 7px);
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.pos-item img {
+    width: 100%;
+    margin: 15px 0px;
+}
+.pos-item h4 {
+    color: #8f0002;
+    margin-bottom: 20px;
+}
+.pos-item button {
+    margin: 30px 0px 40px 0px;
+    font-size: 18px;
+}
+.pos-item :nth-child(n) {
+    text-align: center;
+}
+
+.set-pos {
+    height: 430px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.set-pos :nth-child(n) {
+    display: inline-block;
+}
+.extraset-adv {
+    color: #8f0002;
+}
+.extraset-name {
+    text-align: end;
+}
+
+.profitable-offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #6dcff6;
+    padding: 40px 0px;
+}
+.offer-name {
+    color: #fff;
+    text-shadow: 5px 5px 10px #808080;
+}
+.slider-wrapper {
+    width: 85%;
+    overflow: hidden;
+
+}
+.offer-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.offer-slider {
+    min-width: calc(100% - 20px);
+    min-height: 225px;
+    margin: 30px 10px;
+    padding: 10px;
+    background-color: #fff;
+    position: relative;
+}
+.offer_main-img {
+    height: 200px;
+}
+.offer_main-item {
+    display: inline-block;
+    text-align: center;
+    color: #333333;
+    position: absolute;
+    top: 20px;
+    left: 175px;
+}
+.offer_present-img {
+    width: 190px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+.offer_present-item {
+    color: #333333;
+    display: inline-block;
+    position: absolute;
+    right: 35px;
+    bottom: 20px;
+} 
+
+.slider-control {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 150px;
+}
+.slider-control i {
+    font-size: 40px;
+    color: #fff;
+}
+.counter-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+}
+.item-counter {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 30px 0px;
+}
+footer :nth-child(n) {
+    color: #333333;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.opacity-elem {
+    opacity: 0.6;
+}
+
+@media screen and (min-width: 721px) {
+    .pos-item {
+        width: calc(33% - 7px);
+    }
+    .slider-wrapper {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1281px) {
+    .all-pos-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .pos-item_wrapper {
+        width: 70%;
+    }
+    .set-pos {
+        height: auto;
+        width: 28%;
+    }
+    .slider-wrapper {
+        width: 47%;
+    }
+} 
