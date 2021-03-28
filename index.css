@@ -11,7 +11,7 @@ button {
 }
 
 header {
-    padding: 0px 50px;
+    padding: 0px 20px;
 }
 header, .logo-wrapper {
     display: flex;
@@ -21,16 +21,16 @@ header, .logo-wrapper {
     background-color: #0072bb;
 }
 .logo-img {
-    height: 100px;
+    height: 50px;
 }
 .logo-name {
     color: #fff;
 }
 .order-btn {
-    padding: 20px 60px 20px 35px;
+    padding: 5px 15px 5px 5px;
     background-color: #f36523;
     color: #fff;
-    font-size: 18px;
+    font-size: 10px;
 }
 
 .advertising-info {
@@ -47,7 +47,6 @@ header, .logo-wrapper {
     margin-bottom: 10px;
 }
 .adv-text {
-    width: 450px;
     margin-top: 30px;
 }
 
@@ -60,13 +59,13 @@ header, .logo-wrapper {
 .pos-item_wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .pos-item {
     border: 2px solid #acacac;
     border-radius: 5px;
-    width: calc(50% - 7px);
+    width: 80%;
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
@@ -74,8 +73,8 @@ header, .logo-wrapper {
     align-items: center;
 }
 .pos-item img {
-    width: 100%;
     margin: 15px 0px;
+    width: calc(100% - 10px);
 }
 .pos-item h4 {
     color: #8f0002;
@@ -90,8 +89,8 @@ header, .logo-wrapper {
 }
 
 .set-pos {
-    height: 430px;
-    width: fit-content;
+    max-height: 430px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -99,8 +98,12 @@ header, .logo-wrapper {
 .set-pos :nth-child(n) {
     display: inline-block;
 }
+.mainset-name {
+    font-size: 18px;
+}
 .extraset-adv {
     color: #8f0002;
+    font-size: 18px;
 }
 .extraset-name {
     text-align: end;
@@ -117,10 +120,12 @@ header, .logo-wrapper {
 .offer-name {
     color: #fff;
     text-shadow: 5px 5px 10px #808080;
+    margin-left: 15px;
 }
 .slider-wrapper {
-    width: 85%;
+    width: 260px;
     overflow: hidden;
+    height: 180px;
 
 }
 .offer-wrapper {
@@ -137,38 +142,39 @@ header, .logo-wrapper {
     position: relative;
 }
 .offer_main-img {
-    height: 200px;
+    height: 100px;
 }
 .offer_main-item {
     display: inline-block;
     text-align: center;
     color: #333333;
     position: absolute;
-    top: 20px;
-    left: 175px;
+    top: 5px;
+    left: 90px;
 }
 .offer_present-img {
-    width: 190px;
+    width: 95px;
     position: absolute;
-    top: 15px;
+    top: 50px;
     right: 10px;
 }
 .offer_present-item {
     color: #333333;
     display: inline-block;
     position: absolute;
-    right: 35px;
-    bottom: 20px;
-} 
+    left: 5px;
+    top: 115px;
+}
 
 .slider-control {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 150px;
+    align-items: center;
+    width: 100px;
 }
 .slider-control i {
-    font-size: 40px;
+    font-size: 25px;
     color: #fff;
 }
 .counter-wrapper {
@@ -176,23 +182,23 @@ header, .logo-wrapper {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 100px;
+    width: 70px;
 }
 .item-counter {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background-color: #fff;
 }
 footer {
     background-color: #fff;
     text-align: center;
-    padding: 30px 0px;
+    padding: 10px 0px;
 }
 footer :nth-child(n) {
     color: #333333;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 14px;
     margin-right: 10px;
 }
 
@@ -200,16 +206,82 @@ footer :nth-child(n) {
     opacity: 0.6;
 }
 
-@media screen and (min-width: 721px) {
-    .pos-item {
-        width: calc(33% - 7px);
-    }
-    .slider-wrapper {
-        width: 60%;
+@media screen and (min-width: 375px) {
+    .set-pos {
+        width: 100%;
     }
 }
 
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 426px) {
+    .logo-img {
+        height: 60px;
+    }
+    .logo-name {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .order-btn {
+        padding: 7px 20px 7px 10px;
+        font-size: 16px;
+    }
+    .adv-text {
+        width: 450px;
+    }
+    .pos-item_wrapper {
+        justify-content: space-between;
+    }
+    .pos-item {
+        width: calc(33% - 7px);
+    }
+    .pos-item img {
+        width: calc(100% - 10px);
+    }
+    .slider-wrapper {
+        width: 525px;
+        height: 255px;
+    }
+    .set-pos {
+        width: fit-content;
+    }
+    .offer_main-img {
+    height: 200px;
+    }
+    .offer_main-item {
+    top: 20px;
+    left: 175px;
+    }
+    .offer_present-img {
+    width: 190px;
+    top: 15px;
+    }
+    .offer_present-item {
+        left: 250px;
+        top: 155px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .logo-img {
+        height: 80px;
+    }
+    .logo-name {
+        font-size: 25px;
+    }
+    .order-btn {
+        padding: 10px 25px 10px 15px;
+        font-size: 20px;
+    }
+    .adv-first, .adv-second{
+        font-size: 30px;
+    }
+    .adv-text {
+        width: 535px;
+        font-size: 20px;
+    }
+    .act-pos-name {
+        font-size: 25px;
+    }
+
     .all-pos-wrapper {
         display: flex;
         flex-direction: row;
@@ -223,6 +295,13 @@ footer :nth-child(n) {
         width: 28%;
     }
     .slider-wrapper {
-        width: 47%;
+        width: 650px;
+        height: 285px;
+    }
+    .offer_main-item {
+        font-size: 22px;
+    }
+    .offer_present-item {
+        font-size: 22px;
     }
 } 
